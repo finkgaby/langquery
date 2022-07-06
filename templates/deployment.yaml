@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: langquery
+  labels:
+    app: web
+spec:
+  containers:
+    - name: web-ctr
+      image: langquery:v1.0
+      imagePullPolicy: Never
+      ports:
+          containerPort: 9000
+
